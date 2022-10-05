@@ -10,11 +10,12 @@ let package = Package(
         .library(
             name: "AppConnect",
             targets: ["AppConnect"]),
-    ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
+        .library(
+            name: "ConnectSnapshot",
+            targets: ["ConnectSnapshot"])
     ],
     targets: [
-        .binaryTarget(name: "AppConnect", path: "release/AppConnect.xcframework")
+        .binaryTarget(name: "AppConnect", path: "release/AppConnect.xcframework"),
+        .binaryTarget(name: "ConnectSnapshot", path: "Sub/ConnectSnapshot.xcframework")
     ]
 )
