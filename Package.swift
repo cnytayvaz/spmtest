@@ -18,9 +18,3 @@ let package = Package(
         .binaryTarget(name: "AppConnect", path: "release/AppConnect.xcframework")
     ]
 )
-
-
-
-
-
-
