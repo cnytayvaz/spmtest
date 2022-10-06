@@ -8,10 +8,17 @@ let package = Package(
     platforms: [.iOS(.v9)],
     products: [
         .library(
+            name: "AppConnect",
+            targets: ["AppConnect"]),
+        .library(
             name: "ConnectSnapshot",
             targets: ["ConnectSnapshot"])
     ],
     targets: [
+        .binaryTarget(
+            name: "AppConnect", 
+            path: "release/AppConnect.xcframework"
+        ),
         .binaryTarget(
             name: "ConnectSnapshot", 
             path: "Sub/ConnectSnapshot.xcframework"
