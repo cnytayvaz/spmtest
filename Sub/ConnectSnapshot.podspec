@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name = 'ConnectSnapshot'
-    s.version = '1.0.4'
+    s.version = '3.9.0'
     s.summary = 'Snapshot utility for Connect framework.'
     s.homepage = 'https://gitlab.com/commencis-ios/Connect-SDK-iOS/'
 
@@ -8,8 +8,8 @@ Pod::Spec.new do |s|
     s.license = { :type => 'Commencis', :file => 'LICENSE' }
 
     s.platform = :ios
-    s.source = { :git => 'https://gitlab.com/commencis-ios/Connect-SDK-iOS.git', :tag => "snapshot-release-1.0.4" }
+    s.source = { :git => 'https://gitlab.com/commencis-ios/Connect-SDK-iOS.git', :tag => s.version.to_s }
 
-    s.ios.deployment_target = '8.0'
-    s.ios.vendored_frameworks = 'Sub/ConnectSnapshot.framework'
+    s.ios.deployment_target = '11.0'
+    s.ios.vendored_frameworks = 'Sub/ConnectSnapshot.xcframework'
 end

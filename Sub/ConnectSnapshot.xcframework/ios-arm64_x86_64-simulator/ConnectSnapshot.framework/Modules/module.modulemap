@@ -1,0 +1,11 @@
+framework module ConnectSnapshot {
+  umbrella header "ConnectSnapshot.h"
+
+  export *
+  module * { export * }
+}
+
+module ConnectSnapshot.Swift {
+  header "ConnectSnapshot-Swift.h"
+  requires objc
+}

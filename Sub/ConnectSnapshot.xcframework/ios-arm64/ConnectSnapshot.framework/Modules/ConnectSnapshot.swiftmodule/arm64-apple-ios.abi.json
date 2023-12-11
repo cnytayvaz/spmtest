@@ -1,0 +1,43 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "AppConnect",
+        "printedName": "AppConnect",
+        "declKind": "Import",
+        "moduleName": "ConnectSnapshot",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ConnectSnapshot"
+      },
+      {
+        "kind": "Import",
+        "name": "QuartzCore",
+        "printedName": "QuartzCore",
+        "declKind": "Import",
+        "moduleName": "ConnectSnapshot"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/pozitron\/jenkins\/workspace\/Dataroid_iOS_SDK_CI_and_spm_3.5.0+\/Snapshot\/ConnectSnapshot\/SnapshotWriter.swift",
+      "kind": "StringLiteral",
+      "offset": 575,
+      "length": 5,
+      "value": "\"jpg\""
+    }
+  ]
+}
