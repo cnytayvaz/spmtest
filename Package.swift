@@ -20,9 +20,10 @@ let package = Package(
             path: "release/AppConnect.xcframework"
         ),
         .target(
-            name: "ConnectSnapshot",
-            dependencies: [.package(path: "release/AppConnect.xcframework")],
-            path: "Sub/ConnectSnapshot.xcframework"
-            )
+            name: "AppConnectWithSnapshot",
+            dependencies: [
+                .target(name: "AppConnect"),
+                .target(name: "ConnectSnapshot")
+            ])
     ]
 )
