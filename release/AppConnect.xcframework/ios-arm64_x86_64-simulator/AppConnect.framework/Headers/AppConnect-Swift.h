@@ -2096,22 +2096,22 @@ SWIFT_CLASS_NAMED("TouchPoint")
 
 
 @interface UIBarButtonItem (SWIFT_EXTENSION(AppConnect))
-@property (nonatomic) BOOL apc_isDebounceThresholdExclusion;
+@property (nonatomic) BOOL apc_containsSensitiveObject;
 @end
 
 
 @interface UIBarButtonItem (SWIFT_EXTENSION(AppConnect))
-@property (nonatomic) BOOL apc_containsSensitiveObject;
-@end
-
-
-@interface UIButton (SWIFT_EXTENSION(AppConnect))
-@property (nonatomic) BOOL apc_containsSensitiveObject;
+@property (nonatomic) BOOL apc_isDebounceThresholdExclusion;
 @end
 
 
 @interface UIButton (SWIFT_EXTENSION(AppConnect))
 @property (nonatomic) BOOL apc_isDebounceThresholdExclusion;
+@end
+
+
+@interface UIButton (SWIFT_EXTENSION(AppConnect))
+@property (nonatomic) BOOL apc_containsSensitiveObject;
 @end
 
 
@@ -2175,6 +2175,7 @@ SWIFT_CLASS_NAMED("UserAttributes")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull collections;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface APCUserAttributes (SWIFT_EXTENSION(AppConnect))
@@ -4362,22 +4363,22 @@ SWIFT_CLASS_NAMED("TouchPoint")
 
 
 @interface UIBarButtonItem (SWIFT_EXTENSION(AppConnect))
-@property (nonatomic) BOOL apc_isDebounceThresholdExclusion;
+@property (nonatomic) BOOL apc_containsSensitiveObject;
 @end
 
 
 @interface UIBarButtonItem (SWIFT_EXTENSION(AppConnect))
-@property (nonatomic) BOOL apc_containsSensitiveObject;
-@end
-
-
-@interface UIButton (SWIFT_EXTENSION(AppConnect))
-@property (nonatomic) BOOL apc_containsSensitiveObject;
+@property (nonatomic) BOOL apc_isDebounceThresholdExclusion;
 @end
 
 
 @interface UIButton (SWIFT_EXTENSION(AppConnect))
 @property (nonatomic) BOOL apc_isDebounceThresholdExclusion;
+@end
+
+
+@interface UIButton (SWIFT_EXTENSION(AppConnect))
+@property (nonatomic) BOOL apc_containsSensitiveObject;
 @end
 
 
@@ -4441,6 +4442,7 @@ SWIFT_CLASS_NAMED("UserAttributes")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull collections;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @interface APCUserAttributes (SWIFT_EXTENSION(AppConnect))
