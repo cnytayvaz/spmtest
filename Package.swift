@@ -21,8 +21,9 @@ let package = Package(
         ),
         .binaryTarget(
             name: "ConnectSnapshot", 
-            path: "Sub/ConnectSnapshot.xcframework",
-            dependencies: ["AppConnect"]
+            dependencies: ["AppConnect"],
+            path: "Sub",
+            sources: ["ConnectSnapshot.xcframework"]
             )
     ]
 )
