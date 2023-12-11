@@ -17,11 +17,12 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AppConnect", 
-            path: "./release/AppConnect.xcframework"
+            path: "release/AppConnect.xcframework"
         ),
-        .binaryTarget(
+        .target(
             name: "ConnectSnapshot",
-            path: "./Sub/ConnectSnapshot.xcframework"
+            dependencies: ["AppConnect"],
+            path: "Sub/ConnectSnapshot.xcframework"
             )
     ]
 )
