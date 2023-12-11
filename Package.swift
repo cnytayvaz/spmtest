@@ -12,7 +12,7 @@ let package = Package(
             targets: ["AppConnect"]),
         .library(
             name: "ConnectSnapshot",
-            targets: ["ConnectSnapshotWrapper"])
+            targets: ["./ConnectSnapshotWrapper"])
     ],
     targets: [
         .binaryTarget(
